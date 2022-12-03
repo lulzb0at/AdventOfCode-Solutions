@@ -1,5 +1,3 @@
-import os
-
 # path to your inpout file
 filepath = ""
 
