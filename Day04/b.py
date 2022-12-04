@@ -6,10 +6,7 @@ def get_seq(pair):
 total = 0
 
 for line in lines.splitlines():   
-    lhs = get_seq(line.split(',')[0])
-    rhs = get_seq(line.split(',')[1])
-
-    if set(lhs) & set(rhs):
+    if set(get_seq(line.split(',')[0])) & set(get_seq(line.split(',')[1])):
         total += 1
 
 print(total)
