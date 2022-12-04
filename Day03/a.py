@@ -1,8 +1,5 @@
-# path to input file
-inpout = ''
-
-with open(input,'r') as fh:
-    lines = fh.read()
+inpout = '' # path to input file
+with open(input,'r') as fh: lines = fh.read()
    
 total = []
 
