@@ -1,11 +1,7 @@
-# Path to your input file
-input = ""
+with open('input.txt','r') as fh: lines = fh.read()
 
 max = 0
 cals = []
-
-with open(input,'r') as fh:
-    lines = fh.read()
    
 for line in lines.splintlines():
     if line.isdigit():
