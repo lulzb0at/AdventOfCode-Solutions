@@ -1,6 +1,5 @@
 input = "" # path to your inpout file
-with open(input,'r') as fh:
-    lines = fh.read()
+with open(input,'r') as fh: lines = fh.read()
     
 total = []
 for a,b,c in zip(*[iter(lines.splitlines())]*3):   
