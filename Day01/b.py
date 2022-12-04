@@ -1,4 +1,4 @@
-with open(input,'r') as fh: lines = fh.read()
+with open('input.txt','r') as fh: lines = fh.read()
     
 max = 0
 cals = []
@@ -15,4 +15,4 @@ for line in lines.splintlines():
         cals = []
         
 totals.sort()
-answer = totals[-1] + totals[-2]+totals[-3]
+answer = totals[-1] + totals[-2]+ totals[-3]
