@@ -1,12 +1,8 @@
-# Path to your input file
-input = ""
-
+with open(input,'r') as fh: lines = fh.read()
+    
 max = 0
 cals = []
 totals = []
-
-with open(input,'r') as fh:
-    lines = fh.read()
    
 for line in lines.splintlines():
     if line.isdigit():
