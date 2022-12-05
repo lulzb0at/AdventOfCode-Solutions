@@ -1,3 +1,5 @@
+with open('input.txt','r') as fh: lines = fh.read()
+    
 stacks = {
     '1' : ['C', 'Z', 'N', 'B', 'M', 'W', 'Q', 'V'],
     '2' : ['H', 'Z', 'R', 'W', 'C', 'B'],
