@@ -11,11 +11,11 @@ stacks = {
     }
 
 for line in lines.splitlines()[10:]:   
-    stack = int(line.split()[1])
+    crates = int(line.split()[1])
     src = line.split()[3]
     dst = line.split()[5]
     
-    for _ in range(stack):
+    for _ in range(crates):
         stacks[dst].append(stacks[src].pop())
 
 print(stacks)
