@@ -1,7 +1,4 @@
-import os
-
-input = os.path.join("C:\\", "Users", "DJ St3rling", "Desktop", "input.txt")
-with open(input,'r') as fh: lines = fh.read()
+with open('input.txt','r') as fh: lines = fh.read()
 
 stacks = {
     '1' : ['C', 'Z', 'N', 'B', 'M', 'W', 'Q', 'V'],
