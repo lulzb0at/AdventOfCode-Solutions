@@ -12,12 +12,8 @@ stacks = {
     '9' : ['H', 'L', 'F', 'C', 'G', 'T', 'J'],
     }
 
-for line in lines.splitlines()[10:]:   
-    crates = int(line.split()[1])
-    src = line.split()[3]
-    dst = line.split()[5]
-    
-    for _ in range(crates):
-        stacks[dst].append(stacks[src].pop())
+for line in lines.splitlines()[10:]:     
+    for _ in range(int(line.split()[1])):
+        stacks[line.split()[5]].append(stacks[line.split()[3]].pop())
 
 print(stacks)
