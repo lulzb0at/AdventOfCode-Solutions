@@ -12,16 +12,11 @@ stacks = {
     '9' : ['H', 'L', 'F', 'C', 'G', 'T', 'J'],
     }
 
-for line in lines.splitlines()[10:]:   
-    crates = int(line.split()[1])
-    src = line.split()[3]
-    dst = line.split()[5]
-    
+for line in lines.splitlines()[10:]:       
     tmp = []
-    for _ in range(crates):
-        tmp.append(stacks[src].pop())
-
+    for _ in range(int(line.split()[1])):
+        tmp.append(stacks[line.split()[3]].pop())
     tmp.reverse()
-    stacks[dst] = stacks[dst] + tmp
+    stacks[line.split()[5]] = stacks[line.split()[5]] + tmp
 
 print(stacks)
