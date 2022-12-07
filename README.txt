@@ -1,1 +1,1 @@
-Goal: Use Python3 to solve AoC challenges as quickly as possible.  Challenges available here => https://adventofcode.com/
+Solving AoC challenges w/ Py3 => https://adventofcode.com/
