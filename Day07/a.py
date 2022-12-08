@@ -18,7 +18,6 @@ for line in lines.splitlines()[1:]:
 
 dirs = []
 for row in lsof:
-    print(row)
     if row[0] == 0:
         dirs.append(row[1])
 
@@ -28,7 +27,6 @@ for _dir in dirs:
     for _file in lsof:
         if _file[1].startswith(_dir) and _file[0] != 0:
             total += int(_file[0])
-
     if total < 100000:
         ans+= total
 
