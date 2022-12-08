@@ -21,9 +21,9 @@ for row in lsof:
     if row[0] == 0:
         dirs.append(row[1])
 
-ans = 0 
+ans = 0
 for _dir in dirs:
-    total  = 0 
+    total = 0 
     for _file in lsof:
         if _file[1].startswith(_dir) and _file[0] != 0:
             total += int(_file[0])
